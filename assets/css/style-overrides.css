@@ -1,0 +1,39 @@
+/*
+===============================================================
+Child Theme Styles
+===============================================================
+AUTHOR: Christian Wach <needle@haystack.co.uk>
+---------------------------------------------------------------
+NOTES
+
+---------------------------------------------------------------
+*/
+
+
+
+/* Header Background */
+#header_top
+{
+	background: #0A0933 url("../images/interface/2006_route_taller.jpg") 20px top no-repeat;
+}
+	
+
+
+/* Ticket prices table */
+table#price_table
+{
+	margin: 2px 0 16px 0;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 80%;
+	line-height: 1.6em;
+}
+
+table#price_table th,
+table#price_table td
+{
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+
+
