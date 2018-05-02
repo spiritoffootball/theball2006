@@ -19,7 +19,7 @@ NOTES
 
 		<div id="splash">
 
-			<a href="/wp-content/blogs.dir/7/files/2009/11/the_ball_hands_blue.jpg"><img src="/wp-content/blogs.dir/7/files/2009/11/the_ball_hands_blue-200x150.jpg" alt="The logo held aloft" title="The logo held aloft" width="200" height="150" class="alignnone size-thumbnail-200 wp-image-264" /></a>
+			<a href="/wp-content/blogs.dir/7/files/2009/11/the_ball_hands_blue.jpg"><img src="/wp-content/blogs.dir/7/files/2009/11/the_ball_hands_blue.jpg" alt="The logo held aloft" title="The logo held aloft" width="200" height="150" class="alignnone size-thumbnail-200 wp-image-264" /></a>
 
 		</div><!-- /splash -->
 
