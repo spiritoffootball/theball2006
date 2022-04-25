@@ -1,15 +1,10 @@
-<?php /*
-================================================================================
-2006 Child Theme Class
-================================================================================
-AUTHOR: Christian Wach <needle@haystack.co.uk>
---------------------------------------------------------------------------------
-NOTES
-
---------------------------------------------------------------------------------
-*/
-
-
+<?php
+/**
+ * The Ball 2006 Child Theme Class.
+ *
+ * @since 1.0.0
+ * @package The_Ball_2006
+ */
 
 /**
  * The Ball 2006 Theme Class.
@@ -19,8 +14,6 @@ NOTES
  * @since 1.0.1
  */
 class SOF_The_Ball_2006_Theme {
-
-
 
 	/**
 	 * Initialises this object.
@@ -33,8 +26,6 @@ class SOF_The_Ball_2006_Theme {
 		add_action( 'sof/theme/the_ball/loaded', [ $this, 'initialise' ] );
 
 	}
-
-
 
 	/**
 	 * Include files.
@@ -61,8 +52,6 @@ class SOF_The_Ball_2006_Theme {
 
 	}
 
-
-
 	/**
 	 * Include files.
 	 *
@@ -72,7 +61,7 @@ class SOF_The_Ball_2006_Theme {
 
 		// Only do this once.
 		static $done;
-		if ( isset( $done ) AND $done === true ) {
+		if ( isset( $done ) && $done === true ) {
 			return;
 		}
 
@@ -84,8 +73,6 @@ class SOF_The_Ball_2006_Theme {
 
 	}
 
-
-
 	/**
 	 * Set up this plugin's objects.
 	 *
@@ -95,7 +82,7 @@ class SOF_The_Ball_2006_Theme {
 
 		// Only do this once.
 		static $done;
-		if ( isset( $done ) AND $done === true ) {
+		if ( isset( $done ) && $done === true ) {
 			return;
 		}
 
@@ -103,8 +90,6 @@ class SOF_The_Ball_2006_Theme {
 		$done = true;
 
 	}
-
-
 
 	/**
 	 * Register WordPress hooks.
@@ -136,8 +121,6 @@ class SOF_The_Ball_2006_Theme {
 
 	}
 
-
-
 	/**
 	 * Augment the Base Theme's setup function.
 	 *
@@ -155,8 +138,6 @@ class SOF_The_Ball_2006_Theme {
 		);
 
 	}
-
-
 
 	/**
 	 * Add child theme's CSS file(s).
@@ -176,8 +157,6 @@ class SOF_The_Ball_2006_Theme {
 
 	}
 
-
-
 	/**
 	 * Override image of The Ball.
 	 *
@@ -191,15 +170,13 @@ class SOF_The_Ball_2006_Theme {
 		// Ignore default and set our own.
 		return '<a href="' . get_home_url( null, '/' ) . '" title="' . __( 'Home', 'theball2006' ) . '" class="ball_image">' .
 				'<img src="' . get_stylesheet_directory_uri() . '/assets/images/interface/the_ball_2006.png" ' .
-					 'alt="' . esc_attr( __( 'The Ball 2006', 'theball2006' ) ) . '" ' .
-					 'title="' . esc_attr( __( 'The Ball 2006', 'theball2006' ) ) . '" ' .
-					 'style="width: 100px; height: 100px;" ' .
-					 'id="the_ball_header" />' .
-				'</a>' ;
+					'alt="' . esc_attr( __( 'The Ball 2006', 'theball2006' ) ) . '" ' .
+					'title="' . esc_attr( __( 'The Ball 2006', 'theball2006' ) ) . '" ' .
+					'style="width: 100px; height: 100px;" ' .
+					'id="the_ball_header" />' .
+				'</a>';
 
 	}
-
-
 
 	/**
 	 * Override supporters footer template file.
@@ -216,14 +193,12 @@ class SOF_The_Ball_2006_Theme {
 
 	}
 
-
-
 	/**
 	 * Override users in "Team" template file.
 	 *
 	 * @since 1.0.1
 	 *
-	 * @param array $users The default set of users.
+	 * @param array $default The default set of users.
 	 * @return array $users The modified set of users.
 	 */
 	public function team_members_filter( $default ) {
@@ -233,12 +208,13 @@ class SOF_The_Ball_2006_Theme {
 
 	}
 
-
-
 	/**
 	 * Override active menu item for a custom post type.
 	 *
 	 * @since 1.0.0
+	 *
+	 * @param string $menu The existing active menu item.
+	 * @return string $menu The modified active menu item.
 	 */
 	public function menu_classes_filter( $menu ) {
 
@@ -261,12 +237,13 @@ class SOF_The_Ball_2006_Theme {
 
 	}
 
-
-
 	/**
 	 * Override video height.
 	 *
 	 * @since 1.0.0
+	 *
+	 * @param array $default The default video height.
+	 * @return array $users The modified video height.
 	 */
 	public function video_height( $default ) {
 
@@ -275,9 +252,4 @@ class SOF_The_Ball_2006_Theme {
 
 	}
 
-
-
 }
-
-
-

@@ -1,13 +1,10 @@
-<?php /*
-================================================================================
-Site Banner Template
-================================================================================
-AUTHOR: Christian Wach <needle@haystack.co.uk>
---------------------------------------------------------------------------------
-NOTES
-
---------------------------------------------------------------------------------
-*/
+<?php
+/**
+ * Site Banner Template.
+ *
+ * @since 1.0.0
+ * @package The_Ball_2006
+ */
 
 ?><!-- assets/includes/site_banner.php -->
 
@@ -28,7 +25,7 @@ NOTES
 
 		<div id="banner_copy">
 
-			<h2>Welcome to <?php bloginfo( 'title' ); if ( is_home() ) { echo ' blog'; } ?></h2>
+			<h2><?php echo sprintf( __( 'Welcome to %s', 'theball2006' ), get_bloginfo( 'title' ) ); ?></h2>
 
 			<p>The Ball 2006, known for the first time as <em>The Spirit of Football</em>, embodied the motto of the 2006 World Cup: <em>A Time to make Friends</em>. Its short journey to Munich brought people together in the spirit of the beautiful game.</p>
 
@@ -42,8 +39,6 @@ NOTES
 
 </div><!-- /site_banner -->
 
-
-
 <div id="cols" class="clearfix">
 <div class="cols_inner">
 
@@ -51,6 +46,3 @@ NOTES
 	<?php if ( $page_list ) : ?>
 		<?php load_template( $page_list ); ?>
 	<?php endif; ?>
-
-
-
