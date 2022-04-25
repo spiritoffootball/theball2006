@@ -30,7 +30,7 @@
 			<p>The Ball 2006, known for the first time as <em>The Spirit of Football</em>, embodied the motto of the 2006 World Cup: <em>A Time to make Friends</em>. Its short journey to Munich brought people together in the spirit of the beautiful game.</p>
 
 			<?php if ( ! is_home() ) { ?>
-				<p id="gotoblog"><a href="/2006/blog/">Read the blog &rarr;</a></p>
+				<p id="gotoblog"><a href="/2006/blog/"><?php echo sprintf( __( 'Read the blog %s', 'theball2006' ), '&rarr;' ); ?></a></p>
 			<?php } ?>
 
 		</div><!-- /banner_copy -->

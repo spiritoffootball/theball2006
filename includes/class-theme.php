@@ -243,7 +243,7 @@ class SOF_The_Ball_2006_Theme {
 	 * @since 1.0.0
 	 *
 	 * @param array $default The default video height.
-	 * @return array $users The modified video height.
+	 * @return array $height The modified video height.
 	 */
 	public function video_height( $default ) {
 
