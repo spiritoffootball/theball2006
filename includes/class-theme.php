@@ -6,6 +6,9 @@
  * @package The_Ball_2006
  */
 
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
 /**
  * The Ball 2006 Theme Class.
  *

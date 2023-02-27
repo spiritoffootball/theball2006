@@ -6,7 +6,11 @@
  * @package The_Ball_2006
  */
 
-?><!-- assets/includes/supporters_2006.php -->
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+?>
+<!-- assets/includes/supporters_2006.php -->
 <div id="sponsors" class="clearfix">
 
 	<div id="sponsor_logos">
