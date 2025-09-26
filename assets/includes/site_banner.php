@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div id="splash">
 
-			<a href="/wp-content/blogs.dir/7/files/2009/11/the_ball_hands_blue.jpg"><img src="/wp-content/blogs.dir/7/files/2009/11/the_ball_hands_blue.jpg" alt="The logo held aloft" title="The logo held aloft" width="200" height="150" class="alignnone size-thumbnail-200 wp-image-264" /></a>
+			<a href="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/interface/the_ball_hands_blue.jpg' ); ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/interface/the_ball_hands_blue.jpg' ); ?>" alt="The logo held aloft" title="The logo held aloft" width="200" height="150" class="alignnone size-thumbnail-200 wp-image-264" /></a>
 
 		</div><!-- /splash -->
 
